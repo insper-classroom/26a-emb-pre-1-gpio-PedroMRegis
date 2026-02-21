@@ -32,9 +32,9 @@ int main() {
     // Use delay de 300 ms entre os estados!
 
     if (!gpio_get(BTN_VERMELHO)) {
-      
-
+      sleep_ms(50); 
       while (!gpio_get(BTN_VERMELHO)) {
+        sleep_ms(10);
       };
       gpio_put(LED_PIN_VERMELHO, 1);
       sleep_ms(300);

@@ -23,9 +23,9 @@ int main() {
         if (!gpio_get(BTN_PIN)) {
             sleep_ms(50);
             if (!gpio_get(BTN_PIN)) {
+                printf("Botao 1: %d\n", cnt_1++);
                 while(!gpio_get(BTN_PIN)) {
                 };
-                printf("Botao 1: %d\n", cnt_1++);
             }
         }
 
