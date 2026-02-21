@@ -33,9 +33,7 @@ int main() {
 
     if (!gpio_get(BTN_VERMELHO)) {
       sleep_ms(50); 
-      while (!gpio_get(BTN_VERMELHO)) {
-        sleep_ms(10);
-      };
+      
       gpio_put(LED_PIN_VERMELHO, 1);
       sleep_ms(300);
       gpio_put(LED_PIN_VERMELHO, 0);

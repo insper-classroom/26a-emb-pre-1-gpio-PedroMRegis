@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int a = 0; // var global
-int b = 0; // var global
-
 void foo(int *p) {
     *p = *p + 1; // acessa variavel via ponteiro
 }
 
 int main(void) {
+    int a = 0;
+    int b = 0;
+    
     while (1) {
         foo(&a);
         
